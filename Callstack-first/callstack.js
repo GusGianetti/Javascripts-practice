@@ -1,24 +1,23 @@
-//testing
-function firstFunction() 
-{
-    console.log("Entering firstFunction");
+function firstFunction(){
+    
+    console.log ("Inicio de firstFunction");
     secondFunction();
-    console.log("Exiting firstFunction");
+    console.log("Saliendo de la primer función");
 }
-
-function secondFunction() {
-    console.log("Entering secondFunction");
+function secondFunction()
+{
+    console.log ("Inicio de secondFunction");
     thirdFunction();
-    console.log("Exiting secondFunction");
+    console.log("Saliendo de la segunda función");
 }
 
-function thirdFunction() {
-    console.log("Entering thirdFunction");
-    // This function does not call any other function
-    console.log("Exiting thirdFunction");
+function thirdFunction()
+{
+    console.log("Inicio de thirdFunction")
+    console.log("Saliendo de thirdFunction")
 }
-
 // Start the call stack
-console.log("Starting the call stack");
+console.log ("El funcionamiento del Callstack es el siguiente:");
+console.log("Comienzo del Callstack");
 firstFunction();
-console.log("Call stack completed");
+console.log("Finalizado del Call stack");
